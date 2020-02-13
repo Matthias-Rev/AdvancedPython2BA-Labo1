@@ -7,15 +7,15 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        self.assertAlmostEqual(utils.fact(3), 6)
+        self.assertEqual(utils.fact(3), 6)
         pass
     
     def test_roots(self):
-        self.assertEqual(utils.roots(1, 2, 1), -1)
+        self.assertEqual(utils.roots(1, 2, 1), [-1])
         pass
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate('x^2', 1, 2))
+        self.assertAlmostEqual(utils.integrate('x^2', 1, 2), 7/3)
         pass
 
 if __name__ == '__main__':
