@@ -1,7 +1,3 @@
-# test_utils.py
-# Author: Sébastien Combéfis
-# Version: February 8, 2018
-
 import unittest
 import utils
 

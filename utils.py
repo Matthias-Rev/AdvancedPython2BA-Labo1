@@ -1,5 +1,4 @@
 from math import sqrt
-from spicy.integrate import quad
 
 def fact(n):
 	factorial=1
@@ -37,11 +36,10 @@ def integrate(function, lower, upper):
 	Hint: You can use the 'integrate' function of the module 'scipy' and
 		you'll probably need the 'eval' function to evaluate the function
 		to integrate given as a string.
-	"""
 	x2= lambda x: function
 	answer=integrate.quad(x2, lower, upper)
 	return [0]
-	pass
+	pass"""
 
 if __name__ == '__main__':
 	print(fact(5))
